@@ -1,1 +1,3 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+TODO
+
+https://github.com/tailwindlabs/tailwindcss-setup-examples/tree/master/examples/nextjs

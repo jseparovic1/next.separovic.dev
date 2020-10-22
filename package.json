@@ -1,15 +1,20 @@
 {
-  "name": "learn-starter",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "9.5.3",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
-  }
+    "name": "learn-starter",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "build:tailwind": "npx tailwind build css/tailwind.css  -o output.css  -c tailwind.config.js "
+    },
+    "dependencies": {
+        "@fullhuman/postcss-purgecss": "^3.0.0",
+        "autoprefixer": "^9.7.4",
+        "next": "9.5.3",
+        "postcss-import": "^13.0.0",
+        "react": "16.13.1",
+        "react-dom": "16.13.1",
+        "tailwindcss": "^1.9.5"
+    }
 }
