@@ -10,9 +10,9 @@ export default function GenericPost({post}) {
             <Head>
                 <title>{post.title}</title>
             </Head>
-            <h1>{post.title}</h1>
+            <h1 className="text-gray-300">{post.title}</h1>
             <time dateTime="{post.date}">{format(parseISO(post.date), 'LLLL d, yyyy')}</time>
-            <div dangerouslySetInnerHTML={{__html: post.content}}/>
+            <div className="text-gray-200" dangerouslySetInnerHTML={{__html: post.content}}/>
         </>
     )
 };

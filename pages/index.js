@@ -1,17 +1,22 @@
 import Head from 'next/head'
 import React from "react";
-import PostList from "../components/PostList";
 import {getPostsPreviews} from "../lib/posts";
+import PostPreview from "../components/PostPreview";
 
 export default function HomePage({posts}) {
     return (
         <>
             <Head>
-                <title>separovic.dev</title>
-                {/*<link rel="icon" href="/favicon.ico"/>*/}
+                <title>separovic.dev | Jurica Separovic</title>
             </Head>
             <main>
-                <PostList posts={posts}/>
+                <div className="space-y-8">
+                    {
+                        posts.map((post, index) => {
+                            return <PostPreview key={index} className="space-y-10" post={post}/>
+                        })
+                    }
+                </div>
             </main>
         </>
     )
