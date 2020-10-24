@@ -7,7 +7,7 @@ export default function HomePage({posts}) {
     return (
         <>
             <Head>
-                <title>separovic.dev | Jurica Separovic</title>
+                <title>separovic.dev</title>
             </Head>
             <main>
                 <div className="space-y-8">
