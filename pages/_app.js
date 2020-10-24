@@ -2,30 +2,44 @@ import '../css/tailwind.css';
 import React from "react";
 
 export default function App({Component, pageProps}) {
+    const links = [
+        {
+            name: 'Linkedin',
+            url: 'https://www.linkedin.com/in/jurica-%C5%A1eparovi%C4%87/',
+        },
+        {
+            name: 'Github',
+            url: 'https://github.com/jseparovic1',
+        },
+        {
+            name: 'Twitter',
+            url: 'https://twitter.com/jseparovic1',
+        },
+    ];
+
     return (
         <>
             {/*<Head></Head>*/}
-            <div className="antialiased fonts-sans bg-gray-900">
-                <div className="absolute border-4 border-red-700 w-full"/>
-                <div className="max-w-4xl w-full mx-auto flex flex-col min-h-screen py-6 px-4 lg:py-12 lg:px-0">
-                    <header>
-                        <div className="flex justify-between items-center py-2">
-                            <div className="flex items-center">
-                                <span className="text-5xl text-red-700 font-extrabold">~</span>
-                                <h1 className="ml-2 text-blue-100 text-5xl font-bold tracking-tight">separovic.dev</h1>
-                                <div className="ml-2 mt-2 w-3 h-8 bg-gray-100 animate-blink"/>
-                            </div>
-                            <nav className="flex">
-                                <a title="separovic.dev About"
-                                   href="/about"
-                                   className="ml-6 text-xl text-gray-200 hover:text-blue-600">
-                                    about.<span className="">php</span>
-                                </a>
-                            </nav>
-                        </div>
-                    </header>
+            <div
+                className="relative antialiased fonts-sans min-h-screen bg-gray-900 flex flex-col justify-between">
+                <div className="absolute w-full h-1 bg-red-700"/>
+                <div className="mx-auto flex flex-col sm:bg-blue-900 lg:bg-yellow-900">
                     <Component {...pageProps}/>
                 </div>
+                <footer className="p-8 flex justify-center">
+                    <ul className="flex space-x-6">
+                        {links.map(link => {
+                            return (
+                                <li>
+                                    <a href={link.url}
+                                       className="text-large text-gray-300 hover:underline">
+                                        {link.name}
+                                    </a>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </footer>
             </div>
         </>
     )
