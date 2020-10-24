@@ -1,13 +1,10 @@
 import '../css/tailwind.css';
-import Head from "next/head";
 import React from "react";
 
 export default function App({Component, pageProps}) {
     return (
         <>
-            <Head>
-
-            </Head>
+            {/*<Head></Head>*/}
             <div className="antialiased fonts-sans bg-gray-900">
                 <div className="absolute border-4 border-red-700 w-full"/>
                 <div className="max-w-4xl w-full mx-auto flex flex-col min-h-screen py-6 px-4 lg:py-12 lg:px-0">
