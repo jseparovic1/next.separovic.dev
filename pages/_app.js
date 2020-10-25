@@ -28,9 +28,9 @@ export default function App({Component, pageProps}) {
                 </div>
                 <footer className="p-8 flex justify-center">
                     <ul className="flex space-x-6">
-                        {links.map(link => {
+                        {links.map((link, index) => {
                             return (
-                                <li>
+                                <li key={index}>
                                     <a href={link.url}
                                        className="text-large text-gray-300 hover:underline">
                                         {link.name}
