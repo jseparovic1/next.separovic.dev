@@ -21,9 +21,9 @@ export default function App({Component, pageProps}) {
         <>
             {/*<Head></Head>*/}
             <div
-                className="relative antialiased fonts-sans min-h-screen bg-gray-900 flex flex-col justify-between">
+                className="relative antialiased fonts-sans min-h-screen bg-gray-900 flex flex-col justify-between text-gray-200">
                 <div className="absolute w-full h-1 bg-red-700"/>
-                <div className="mx-auto flex flex-col sm:bg-blue-900 lg:bg-yellow-900">
+                <div className="mx-auto">
                     <Component {...pageProps}/>
                 </div>
                 <footer className="p-8 flex justify-center">
@@ -32,7 +32,7 @@ export default function App({Component, pageProps}) {
                             return (
                                 <li key={index}>
                                     <a href={link.url}
-                                       className="text-large text-gray-300 hover:underline">
+                                       className="text-large hover:underline">
                                         {link.name}
                                     </a>
                                 </li>

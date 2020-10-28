@@ -10,7 +10,7 @@ export default function PostPreview({post, className}) {
                 <div className="text-xs uppercase text-gray-600">
                     <time dateTime={post.date}>{format(parseISO(post.date), 'LLLL d, yyyy')}</time>
                 </div>
-                <h2 className="text-gray-200 text-2xl font-bold tracking-normal leading-9">{post.title}</h2>
+                <h2 className="text-2xl font-bold tracking-normal leading-9">{post.title}</h2>
                 <p className="mt-2 text-lg text-gray-400 leading-7">{post.description}</p>
             </article>
         </Link>
