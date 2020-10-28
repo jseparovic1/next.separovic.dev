@@ -16,7 +16,7 @@ export default function GenericPost({post}) {
                 <h1 className="text-4xl font-extrabold leading-tight text-center">{post.title}</h1>
                 {/*<time dateTime={post.date}>{format(parseISO(post.date), 'LLLL d, yyyy')}</time>*/}
             </div>
-            <div className="px-8 max-w-3xl mx-auto leading-relaxed">
+            <div className="px-8 max-w-3xl mx-auto leading-7">
                 <ReactMarkdown className="post-content" source={post.content}/>
             </div>
         </>
