@@ -6,23 +6,22 @@
     @apply text-lg leading-normal text-gray-100;
 
     & > * + *, li + li, li > p + p {
-        @apply mt-6;
+        @apply mb-6;
     }
 
     h1, h2 {
-        @apply text-2xl leading-tight font-bold mt-8;
+        @apply text-2xl leading-tight font-bold mb-2;
     }
 
     a {
-        @apply text-red-400 shadow-md border-b border-red-400;
+        @apply text-red-600 shadow-md border-b border-b-2 border-red-600;
     }
 
     pre {
         @apply block rounded-lg bg-black px-2 py-4 shadow-2xl;
-
-        code {
-            @apply font-mono text-base inline;
-        }
+    }
+    code {
+        @apply font-mono text-base inline bg-black rounded-lg p-1;
     }
 
     blockquote {
@@ -32,9 +31,11 @@
     ul {
         @apply list-disc;
     }
+
     ol {
         @apply list-decimal;
     }
+
     ul, ol {
         @apply list-inside px-4;
 

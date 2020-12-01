@@ -12,11 +12,10 @@ export default function GenericPost({post}) {
                 <meta name="description" content={post.description}/>
             </Head>
 
-            <div className="p-8 mx-auto max-w-4xl">
-                <h1 className="text-4xl font-extrabold leading-tight text-center">{post.title}</h1>
-                {/*<time dateTime={post.date}>{format(parseISO(post.date), 'LLLL d, yyyy')}</time>*/}
+            <div className="px-4 md:px-10 py-8 lg:py-16 mx-auto max-w-4xl">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">{post.title}</h1>
             </div>
-            <div className="px-8 max-w-3xl mx-auto leading-7">
+            <div className="px-8 max-w-3xl mx-auto">
                 <ReactMarkdown className="post-content" source={post.content}/>
             </div>
         </>
