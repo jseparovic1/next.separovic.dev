@@ -31,10 +31,7 @@ export default function App({Component, pageProps}) {
                         {links.map((link, index) => {
                             return (
                                 <li key={index}>
-                                    <a href={link.url}
-                                       className="text-large hover:underline">
-                                        {link.name}
-                                    </a>
+                                    <a href={link.url} className="text-large hover:underline">{link.name}</a>
                                 </li>
                             )
                         })}

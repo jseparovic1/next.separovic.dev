@@ -4,8 +4,6 @@ description: 'Some short description that is a bit longer than expected in some 
 date: '2020-01-02'
 ---
 
-# Furtum canescunt classe oriuntur effugiam et et
-
 ## Potentum mora mirer sententia
 
 Lorem markdownum. Frenisque arces cuique Triptolemo Minoe si est? Mei felix

@@ -1,5 +1,12 @@
-/* purgecss start ignore */
 @import 'tailwindcss/base';
-/* purgecss end ignore */
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.post-content {
+    @apply text-lg leading-normal text-gray-900;
+    h1, h2 {
+        background-color: rebeccapurple;
+        color: red;
+        font-size: 4rem;
+    }
+}
