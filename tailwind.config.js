@@ -24,7 +24,9 @@ module.exports = {
         },
     },
     variants: {
-        animation: ['hover']
-    },
-    plugins: [],
+        extend: {
+            animation: ['hover'],
+        },
+        plugins: [],
+    }
 }

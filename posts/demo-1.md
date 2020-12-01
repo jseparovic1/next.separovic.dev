@@ -11,6 +11,11 @@ saepe miserabile Titan et spicula Ismariis odores faciat. Montesque virusque
 illis, una sustulit ubi tecta amore qui calcat uno viri subscribi? Ex fecerat
 Pallade Hyperione relinquere fuga tu Tartara misso tellusque, prohibete clamat.
 
+```php
+    $name = new \ReflectionClass();
+    $name->getConstant("Matko");
+```
+
 > Quae dedit suique potentior ultimus etiam, Damasicthona Pentheus Aegaeo passo
 > paulum arbor donec licet tamen, sonitu pharetram mente. Haec ea esse erit
 > liceatque opus trahit duo facite vinci. *Augur si arceat* Te dari sitis siqua
