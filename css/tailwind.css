@@ -3,14 +3,14 @@
 @import "tailwindcss/utilities";
 
 .post-content {
-    @apply text-lg leading-normal text-gray-100;
+    @apply text-lg leading-normal text-gray-200;
 
     & > * + *, li + li, li > p + p {
         @apply mb-6;
     }
 
     h1, h2 {
-        @apply text-2xl leading-tight font-bold mb-2;
+        @apply text-2xl leading-tight font-bold mb-2 text-gray-100;
     }
 
     a {
