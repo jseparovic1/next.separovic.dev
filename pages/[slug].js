@@ -1,8 +1,16 @@
 import Head from "next/head";
 import {getPost, getPostsSlugs} from "../lib/posts";
 import ReactMarkdown from "react-markdown";
+import {useEffect} from "react";
+import Prism from 'prismjs';
 
 export default function GenericPost({post}) {
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setTimeout(() => Prism.highlightAll());
+        }
+    }, []);
+
     return (
         <>
             <Head>

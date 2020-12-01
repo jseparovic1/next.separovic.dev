@@ -1,4 +1,5 @@
 import '../css/tailwind.css';
+import '../css/syntax.css';
 import React from "react";
 
 export default function App({Component, pageProps}) {
@@ -19,7 +20,6 @@ export default function App({Component, pageProps}) {
 
     return (
         <>
-            {/*<Head></Head>*/}
             <div
                 className="relative antialiased fonts-sans min-h-screen bg-gray-900 flex flex-col justify-between text-gray-200">
                 <div className="absolute w-full h-1 bg-red-700"/>

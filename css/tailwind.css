@@ -14,14 +14,15 @@
     }
 
     a {
-        @apply text-red-600 shadow-md border-b border-b-2 border-red-600;
+        @apply text-red-200 shadow-md border-b border-b-2 border-red-200;
     }
 
     pre {
-        @apply block rounded-lg bg-black px-2 py-4 shadow-2xl;
+        @apply flex rounded-lg bg-black px-2 py-4 shadow-2xl;
     }
+
     code {
-        @apply font-mono text-base inline bg-black rounded-lg p-1;
+        @apply font-mono text-sm inline bg-black rounded-lg p-1;
     }
 
     blockquote {
