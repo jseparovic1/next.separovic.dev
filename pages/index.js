@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React from "react";
+import {MDXProvider} from '@mdx-js/react'
 import {getPostsPreviews} from "../lib/posts";
 import PostPreview from "../components/PostPreview";
 
@@ -21,9 +22,7 @@ export default function HomePage({posts}) {
             <main className="px-4">
                 <div className="max-w-3xl mt-4 space-y-8">
                     {
-                        posts.map((post, index) => {
-                            return <PostPreview key={index} post={post}/>
-                        })
+                        posts.map(post => <PostPreview post={post}/>)
                     }
                 </div>
             </main>
@@ -32,6 +31,7 @@ export default function HomePage({posts}) {
 }
 
 export async function getStaticProps() {
+
     return {
         props: {
             posts: getPostsPreviews()

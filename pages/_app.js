@@ -1,5 +1,4 @@
 import '../css/tailwind.css';
-import '../css/syntax.css';
 import React from "react";
 
 export default function App({Component, pageProps}) {

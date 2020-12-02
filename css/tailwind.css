@@ -1,55 +1,7 @@
 @import 'tailwindcss/base';
 @import "tailwindcss/components";
+
+@import "content.css";
+@import "syntax.css";
+
 @import "tailwindcss/utilities";
-
-.post-content {
-    @apply text-lg leading-normal text-gray-200;
-
-    & > * + *, li + li, li > p + p {
-        @apply mb-6;
-    }
-
-    h1, h2 {
-        @apply text-2xl leading-tight font-bold mb-2 text-gray-100;
-    }
-
-    a {
-        @apply text-red-200 shadow-md border-b border-b-2 border-red-200;
-    }
-
-    pre {
-        @apply flex rounded-lg bg-black px-2 py-4 shadow-2xl;
-    }
-
-    code {
-        @apply font-mono text-sm inline bg-black rounded-lg p-1;
-    }
-
-    blockquote {
-        @apply border-l-4 border-gray-400 pl-4 italic;
-    }
-
-    ul {
-        @apply list-disc;
-    }
-
-    ol {
-        @apply list-decimal;
-    }
-
-    ul, ol {
-        @apply list-inside px-4;
-
-        li {
-            @apply mt-1;
-        }
-    }
-
-    strong {
-        @apply font-bold;
-
-        a {
-            @apply font-bold;
-        }
-    }
-}
