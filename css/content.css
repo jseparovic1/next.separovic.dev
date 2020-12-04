@@ -13,13 +13,14 @@
         @apply text-red-200 shadow-md border-b border-b-2 border-red-200;
     }
 
-    pre {
-        @apply flex rounded-lg bg-black px-2 py-4 shadow-2xl overflow-x-auto;
+    code {
+        @apply font-mono text-sm inline rounded-lg p-1;
     }
 
-    code {
-        @apply font-mono text-sm inline bg-black rounded-lg p-1;
+    pre {
+        @apply flex rounded-lg shadow-2xl overflow-x-auto;
     }
+
 
     blockquote {
         @apply border-l-4 border-gray-400 pl-4 italic;

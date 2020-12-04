@@ -13,7 +13,6 @@
         "@next/mdx": "^10.0.3",
         "autoprefixer": "^10.0.4",
         "date-fns": "^2.16.1",
-        "gray-matter": "^4.0.2",
         "next": "^10.0.3",
         "postcss": "^8.1.10",
         "postcss-import": "^13.0.0",
@@ -22,6 +21,7 @@
         "react": "16.13.1",
         "react-dom": "16.13.1",
         "react-markdown": "^5.0.2",
+        "rehype-autolink-headings": "^5.0.1",
         "rehype-slug": "^4.0.1",
         "tailwindcss": "^2.0.1"
     }
