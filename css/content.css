@@ -10,7 +10,7 @@
     }
 
     a {
-        @apply text-red-200 shadow-md border-b border-b-2 border-red-200;
+        @apply text-brand-200 shadow-md border-b border-b-2 border-brand-200;
     }
 
     code {
@@ -20,7 +20,6 @@
     pre {
         @apply flex rounded-lg shadow-2xl overflow-x-auto;
     }
-
 
     blockquote {
         @apply border-l-4 border-gray-400 pl-4 italic;

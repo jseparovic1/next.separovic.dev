@@ -1,6 +1,12 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
     purge: ['./pages/**/*.js', './components/**/*.js'],
     theme: {
+        colors: {
+           brand: colors.red,
+           gray: colors.coolGray,
+        },
         extend: {
             animation: {
                 blink: "blink 0.8s infinite",

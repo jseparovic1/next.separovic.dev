@@ -12,7 +12,7 @@ export default function App({Component, pageProps}) {
                 <title>separovic.dev</title>
             </Head>
             <div className="relative antialiased fonts-sans min-h-screen bg-gray-900 text-gray-200">
-                <div className="absolute w-full h-1 bg-red-700"/>
+                <div className="absolute w-full h-1 bg-brand-700"/>
                 <Header
                     left={<HeaderBlinkText title="separovic.dev"/>}
                 />

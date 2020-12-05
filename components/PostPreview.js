@@ -5,7 +5,7 @@ import {format, parseISO} from 'date-fns';
 export default function PostPreview({post}) {
     return (
         <Link href={post.link}>
-            <article className="border border-2 border-gray-400 p-4 hover:animate-wiggle transition transition-all hover:bg-red-900">
+            <article className="border border-2 border-gray-400 p-4 hover:animate-wiggle transition transition-all hover:bg-brand-900">
                 <div className="text-xs uppercase text-gray-400">
                     <time dateTime={post.date}>{format(parseISO(post.meta.date), 'LLLL d, yyyy')}</time>
                 </div>
