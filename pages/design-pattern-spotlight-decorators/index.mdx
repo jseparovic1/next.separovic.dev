@@ -1,0 +1,42 @@
+
+export const meta = {
+  title: 'The decorator pattern',
+  description: 'Find out about practical usages of decorator pattern in PHP.',
+  date: '2020-12-06T18:05:31Z',
+  author: "Jurica Separovic",
+  discussion: 'https://github.com/tailwindcss/tailwindcss/discussions/1987',
+}
+
+import Post from '../../components/Post';
+export default ({ children }) => <Post meta={meta}>{children}</Post>
+
+## The pattern
+
+We're a team of developers so naturally there was no way we could convince ourselves to use something off-the-shelf, and opted to build something simple and custom with [Next.js](http://nextjs.org).
+
+> Coffee. The finest organic suspension ever devised... I beat the Borg with it.
+
+There are a lot of things to like about Next.js, but the primary reason we decided to use it is that it has great support for [MDX](https://mdxjs.com/), which is the format we wanted to use to author our posts.
+
+```md
+# My first MDX post
+
+MDX is a really cool authoring format because it lets
+you embed React components right in your markdown:
+
+<MyComponent myProp={5} />
+
+How cool is that?
+```
+
+## Caching
+
+TBD
+
+## Logging
+
+TBD
+
+## Symfony integration
+
+TBD

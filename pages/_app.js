@@ -4,6 +4,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HeaderBlinkText from "../components/HeaderBlinkText";
+import Navigation from "../components/Navigation";
 
 export default function App({Component, pageProps}) {
     return (
@@ -15,6 +16,7 @@ export default function App({Component, pageProps}) {
                 <div className="absolute w-full h-1 bg-brand-700"/>
                 <Header
                     left={<HeaderBlinkText title="separovic.dev"/>}
+                    // right={<Navigation/>}
                 />
                 <main>
                     <Component {...pageProps}/>
